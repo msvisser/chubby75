@@ -8,7 +8,7 @@ Components
 * Lattice ECP5 `LFE5U-25F-6BG256C` ([product page](https://www.latticesemi.com/Products/FPGAandCPLD/ECP5))
 * Winbond `25Q32JVSIQ`, 32 Mbits SPI flash ([datasheet](datasheets/w25q32jv_spi_revc_08302016.pdf))
 * 2x Realtek `RTL8211FD` Gigabit Ethernet PHYs ([datasheet](datasheets/RTL8211F-CG-RealtekMicroelectronics.pdf))
-* 1x ESMT `M12L64322A` 2M 200MHz SDRAM (organized as 4 x 512k x 32bit) ([datasheet](datasheets/M12L64322A(2S).pdf))  
+* 1x ESMT `M12L64322A` 2M 200MHz SDRAM (organized as 4 x 512k x 32bit) ([datasheet](datasheets/M12L64322A(2S).pdf))
 * 12x `74HC245T` Octal Bidirectional Transceiver (used for level translation to 5V)
 
 
@@ -74,7 +74,7 @@ LED, Button
 
 There is a general purpose, FPGA controlled LED (DATA_LED-) at T6, active low (FPGA pin should be set to open drain).
 
-Additionally, there is a button (J28, KEY+). When M13 is an input, pressing the button will read low, otherwise it will read high.
+Additionally, there is a button (J28, KEY+). When R7 is an input, pressing the button will read low, otherwise it will read high.
 
 Connector J1
 --------------
@@ -86,9 +86,9 @@ Connector J1
 | 3     | B0        |  E4      |                                   |         |                 |
 | 4     | *GND*     |  *GND*   | -                                 | *GND*   |                 |
 | 5     | R1        |  D3      |                                   |         |                 |
-| 6     | G1        |  F4      |                                   |         |                 |
-| 7     | B1        |  F5      | Bank 3 - PR47D - *LRC_GPLL0C_IN*  |         |                 |
-| 8     | E         |  E3      | Bank 6 - PL38A                    |         |                 |
+| 6     | G1        |  F5      |                                   |         |                 |
+| 7     | B1        |  E3      |                                   |         |                 |
+| 8     | E         |  N4      |                                   |         |                 |
 | 9     | A         |  N5      | Bank 6 - *PL44D*                  |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                    |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*                  |         |                 |
@@ -112,7 +112,7 @@ Connector J2
 | 6     | G1        |  H2      |                               |         |                 |
 | 7     | B1        |  H3      |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -136,7 +136,7 @@ Connector J3
 | 6     | G1        |  E2      |                               |         |                 |
 | 7     | B1        |  E1      |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -160,7 +160,7 @@ Connector J4
 | 6     | G1        |  T2      |                               |         |                 |
 | 7     | B1        |  N6      |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -183,7 +183,7 @@ Connector J5
 | 6     | G1        |  T14     |                               |         |                 |
 | 7     | B1        |  P12     |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -207,7 +207,7 @@ Connector J6
 | 6     | G1        |  N14     |                               |         |                 |
 | 7     | B1        |  H15     |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -230,7 +230,7 @@ Connector J7
 | 6     | G1        |  F16     |                               |         |                 |
 | 7     | B1        |  E16     |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
@@ -252,9 +252,9 @@ Connector J8
 | 4     | *GND*     |  *GND*   | -                             | *GND*   |                 |
 | 5     | R1        |  B16     |                               |         |                 |
 | 6     | G1        |  C15     |                               |         |                 |
-| 7     | B1        |  N5      |                               |         |                 |
+| 7     | B1        |  B15     |                               |         |                 |
 | 8     | E         |  N4      |                               |         |                 |
-| 9     | A         |  N5      | Bank 6 - *PL44D*                |         |                 |
+| 9     | A         |  N5      | Bank 6 - *PL44D*              |         |                 |
 | 10    | B         |  N3      | Bank 6 - PL35D                |         |                 |
 | 11    | C         |  P3      | Bank 6 - *PL38B*              |         |                 |
 | 12    | D         |  P4      | Bank 6 - PL41A                |         |                 |
